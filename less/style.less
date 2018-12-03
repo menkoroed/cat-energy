@@ -1,0 +1,25 @@
+@color: #ff0;
+
+.top{
+  top: 30px;
+	color: #000;
+}
+
+.bottom{
+  background-color: #fff;
+  color: @color;
+}
+
+.main{
+  .top;
+  .bottom;
+  &--real{
+  	top: 10px;
+  }
+  &:hover{
+  	color: #f00;
+    &::before{
+  	content: "";
+  	}
+  }
+}

@@ -1,0 +1,23 @@
+.top {
+  top: 30px;
+  color: #000;
+}
+.bottom {
+  background-color: #fff;
+  color: #ff0;
+}
+.main {
+  top: 30px;
+  color: #000;
+  background-color: #fff;
+  color: #ff0;
+}
+.main--real {
+  top: 10px;
+}
+.main:hover {
+  color: #f00;
+}
+.main:hover::before {
+  content: "";
+}
