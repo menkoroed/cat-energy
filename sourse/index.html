@@ -77,10 +77,12 @@
 					<dd class="example__description example__description--second">затрачено времени</dd>
 				</dl>
 				<b class="example__intro">Затраты на питание: 15 000 руб.</b>
-				<ul class="example__list">
-					<li class="example__item example__item--first"><img src="img/before-mobile.jpg" width="320" height="240" alt="Кошка до Cat Energy Slim"></li>
-					<li class="example__item"><img src="img/after-mobile.jpg" width="320" height="240" alt="Кошка после Cat Energy Slim"></li>
-				</ul>
+				<div class="example__comparison">
+					<div class="example__container">
+						<div class="example__divisor"></div>
+					</div>
+				</div>
+				<label for="range" class="example__label-table">Было</label><input class="example__range-table" type="range" id="range" value="50" min="0" max="100" oninput="moveDivisor()"><label for="range" class="example__label-table">Стало</label>
 				<label class="example__label">Было<input class="example__range" type="range" value="0" min="0" max="1">Стало</label>
 			</section>
 			<section class="contacts">
@@ -112,5 +114,6 @@
 		</footer>
 		<script src="js/menu.js"></script>
 		<script src="js/slider.js"></script>
+		<script src="js/slider-tablet.js"></script>
 	</body>
 </html>

@@ -1,11 +1,11 @@
 var range = document.querySelector('.example__range');
-var first = document.querySelector('.example__item--first');
+var divisor = document.querySelector('.example__divisor');
 
 range.addEventListener('input', sliderChange);
 function sliderChange() {
 	if(this.value == 1){
-    first.classList.add('example__item--js');
+    divisor.classList.add('example__divisor-js');
   } else{
-    first.classList.remove('example__item--js');
+    divisor.classList.remove('example__divisor-js');
   }
 }

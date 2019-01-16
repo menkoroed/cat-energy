@@ -398,37 +398,17 @@ a {
   text-align: center;
   margin: 0;
   background-color: #f2f2f2;
-  width: 82px;
+  width: 70px;
   position: absolute;
   &--first{
     top: 49px;
-    left: 18px;
+    left: 27px;
   }
 
   &--second{
     top: 49px;
-    right: 18px;
+    right: 25px;
   }
-}
-
-.example__range{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 82px;
-  height: 12px;
-  border: 1px solid #cdcdcd;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 20px;
-}
-
-.example__range::-webkit-slider-thumb{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 35px;
-  height: 6px;
-  border-radius: 5px;
-  background-color: #68b738;
 }
 
 .example__intro{
@@ -442,22 +422,30 @@ a {
   margin-top: 20px;
 }
 
-.example__list{
-  list-style: none;
-  position: relative;
+.example__comparison{
+  width: 320px;
   height: 240px;
-  padding: 0;
+  overflow: hidden;
+  margin-left: -20px;
 }
 
-.example__item{
+.example__container {
+  background-color: #f2f2f2;
+  background-image: url(../img/after-mobile.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.example__divisor {
+  background: #f2f2f2 url(../img/before-mobile.png) no-repeat;
+  width: 100%;
+  height: 100%;
   position: absolute;
 }
 
-.example__item--first{ 
-  z-index: 1;
-}
-
-.example__item--js{
+.example__divisor-js{
   display: none;
 }
 
@@ -467,6 +455,31 @@ a {
   line-height: 20px;
   color: #111;
   text-align: center;
+}
+
+.example__range{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 82px;
+  height: 12px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.example__range::-webkit-slider-thumb,
+.example__range::-moz-range-thumb{
+  -webkit-appearance: none;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #68b738;
+}
+
+.example__label-table{
+  display: none;
 }
 
 .contacts{
@@ -570,8 +583,8 @@ a {
 @media (min-width: @tablet-width) {
   .page-header{
     width: @tablet-width;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
   }
 
@@ -672,8 +685,8 @@ a {
 
   .page-main{
     width: @tablet-width;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .categories__head{
@@ -801,5 +814,118 @@ a {
       content: "4";
       right: -7px;
     }
+  }
+
+  .example{
+    background: none;
+    width: auto;  }
+
+  .example__title{
+    font-size: 60px;
+  }
+
+  .example__text{
+    font-size: 16px;
+    line-height: 24px;
+    width: 630px;
+  }
+
+  .example__definition{
+    display: inline-block;
+  }
+
+  .example__term{
+    font-size: 30px;
+    line-height: 37.02px;
+    width: 160px;
+    margin-right: 42px;
+    display: inherit;
+  }
+
+  .example__description{
+    background-color: #fff;
+    width: 116px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 63px;
+    &--first{
+      left: 25px;
+    }
+
+    &--second{
+      left: 225px;
+    }
+  }
+
+  .example__intro{
+    display: inline-block;
+    width: 180px;
+    margin-left: 96px;
+    margin-top: 46px;
+    text-align: right;
+    font-size: 22.69px;
+    line-height: 22.69px;
+  }
+
+  .example__label{
+    display: none;
+  }
+
+  .example__label-table{
+    display: inline;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111;
+    border-bottom: 1px dotted #b8b8b8;
+    position: relative;
+    bottom: 98px;
+    left: 77px;
+  }
+
+  .example__range-table{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    bottom: 98px;
+    left: 77px;
+    margin: 24px;
+    margin-bottom: 0;
+  }
+
+  .example__range-table::-webkit-slider-thumb,
+  .example__range-table::-moz-range-thumb{
+    width: 32px;
+    height: 32px;
+    background-color: #68b738;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    box-shadow: 
+    0 2px 5px 0 rgba(0, 0, 0, 0.15),
+    inset 0 0 0 11px #fff;
+  }
+
+  .example__comparison {
+    width: @tablet-width;
+    height: 631px;
+    margin-left: -30px;
+  }
+
+  .example__container {
+    background-image:
+     url(../img/after-tablet.png),
+     linear-gradient(#fff 169px, #eaeaea 169px, #eaeaea 462px);
+     background-position: 46px 0, 0 0;
+  }
+
+  .example__divisor{
+    background-image:
+     url(../img/before-tablet.png),
+     linear-gradient(#fff 169px, #f2f2f2 169px, #f2f2f2 462px);
+    width: 50%;
+    background-position: 45px 0, 0 0;
   }
 }
