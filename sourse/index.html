@@ -86,16 +86,17 @@
 				<label class="example__label">Было<input class="example__range" type="range" value="0" min="0" max="1">Стало</label>
 			</section>
 			<section class="contacts">
-				<h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-				<p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-				<img src="img/map-pin.png" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map">
+				<h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
+				<p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="content__text-town">Санкт-Петербург</span></p>
+				<picture>
+					<source media="(min-width: 768px)" srcset="img/map-pin-tablet.png">
+					<img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map">
+				</picture>
 			</section>
 		</main>
 		<footer class="page-footer">
 			<a class="page-footer__logo">
-				<svg class="page-footer__logo-image" width="101" height="18">
-					<use xlink:href="#icon-logo"></use>
-				</svg>
+				<img src="img/icon-logo.svg" class="page-footer__logo-image">	
 			</a>
 			<div class="social">
 	      <ul class="social__list">
