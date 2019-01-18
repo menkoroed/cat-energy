@@ -660,6 +660,7 @@ a {
     width: 427px;
     margin-top: 57px;
     margin-left: 72px;
+    text-align: left;
   }
 
   .page-header__slogan{
@@ -1010,5 +1011,139 @@ a {
     &::after{
       top: 60px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header{
+    width: @desktop-width;
+    min-height: 696px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .main-nav{
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .page-header__logo{
+    margin-top: 54px;
+    &-image{
+      width: 202px;
+      height: 59px;
+    }
+  }
+
+  .site-list{
+    justify-content: space-between;
+    width: 480px;
+    align-items: baseline;
+  }
+
+  .site-list__item{
+    margin: 0;
+    margin-top: 58px;
+    padding-bottom: 12px;
+    & a{
+      color: #fff;
+      font-size: 20px;
+      background-color: transparent;
+    }
+
+    &--active{
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+  .page-header__container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 696px;
+    background-image: url(../img/index-background-desktop.jpg);
+    z-index: -1;
+  }
+
+  .page-header__intro{
+    margin-top: 113px;
+    margin-left: 84px;
+  }
+
+  .page-header__slogan{
+    margin-left: 84px;
+    width: 300px;
+    text-align: left;
+  }
+
+  .page-header__image{
+    position: absolute;
+    top: 182px;
+    right: 327px;
+  }
+
+  .page-header__button{
+    position: static;
+    margin-left: 84px;
+  }
+
+  .page-main{
+    width: @desktop-width;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .categories__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  .categories__item{
+    width: 570px;
+  }
+
+  .categories__head{
+    text-align: center;
+    margin-left: -55px;
+    width: 570px;
+    &--first::before{
+      width: 70px;
+      height: 97px;
+      top: -39px;
+      left: 66px;
+    }
+
+    &::after{
+      width: 100px;
+      height: 100px;
+      left: 52px;
+      top: -33px;
+    }
+
+    &--second{
+      margin-left: 0;
+      &::before{
+        width: 134px;
+        height: 56px;
+        top: -11px;
+        left: -22px;
+      }
+
+      &::after{
+        left: 0;
+      }
+    }
+  }
+
+  .categories__text{
+    width: 410px;
+    margin-top: 45px;
+  }
+
+  .categories__link{
+    margin-top: 38px;
   }
 }
