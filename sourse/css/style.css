@@ -727,20 +727,23 @@ a {
   .example__title {
     font-size: 60px;
   }
+  .example__top {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .example__text {
     font-size: 16px;
     line-height: 24px;
     width: 630px;
   }
   .example__definition {
-    display: inline-block;
+    justify-content: flex-start;
   }
   .example__term {
     font-size: 30px;
     line-height: 37.02px;
     width: 160px;
     margin-right: 42px;
-    display: inherit;
   }
   .example__description {
     background-color: #fff;
@@ -756,10 +759,9 @@ a {
     left: 225px;
   }
   .example__intro {
-    display: inline-block;
     width: 180px;
     margin-left: 96px;
-    margin-top: 46px;
+    margin-top: 25px;
     text-align: right;
     font-size: 22.69px;
     line-height: 22.69px;
@@ -892,6 +894,12 @@ a {
     width: 202px;
     height: 59px;
   }
+  .page-header__logo:hover {
+    opacity: 0.8;
+  }
+  .page-header__logo:active {
+    opacity: 0.6;
+  }
   .site-list {
     justify-content: space-between;
     width: 480px;
@@ -906,6 +914,12 @@ a {
     color: #fff;
     font-size: 20px;
     background-color: transparent;
+  }
+  .site-list__item a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .site-list__item a:active {
+    color: rgba(255, 255, 255, 0.3);
   }
   .site-list__item--active {
     border-bottom: 2px solid #fff;
@@ -937,6 +951,12 @@ a {
   .page-header__button {
     position: static;
     margin-left: 84px;
+  }
+  .page-header__button:hover {
+    background-color: #5eaa2f;
+  }
+  .page-header__button:active {
+    color: rgba(255, 255, 255, 0.302);
   }
   .page-main {
     width: 1440px;
@@ -987,4 +1007,134 @@ a {
   .categories__link {
     margin-top: 38px;
   }
+  .categories__link:hover::after {
+    width: 33px;
+    background-image: url(../img/long-arrow.svg);
+    background-repeat: no-repeat;
+  }
+  .categories__link:active {
+    opacity: 0.3;
+  }
+  .advantages__title {
+    margin-top: 80px;
+  }
+  .advantages__list {
+    width: auto;
+  }
+  .example {
+    background-color: #f2f2f2;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -110px;
+    margin-right: -110px;
+  }
+  .example__title {
+    background-color: #fff;
+    padding-bottom: 66px;
+    margin-top: -20px;
+    width: 1440px;
+    padding-left: 110px;
+  }
+  .example__top {
+    width: 600px;
+  }
+  .example__text {
+    width: 400px;
+    margin-left: 110px;
+  }
+  .example__description {
+    background-color: #f2f2f2;
+  }
+  .example__definition {
+    align-items: baseline;
+    margin-left: 110px;
+  }
+  .example__comparison {
+    margin-top: -208px;
+  }
+  .example__range-table {
+    left: 717px;
+  }
+  .example__label-table {
+    bottom: 85px;
+    left: 195px;
+  }
+  .example__label-table:first-of-type {
+    left: 1235px;
+  }
+  .example__intro {
+    width: auto;
+    margin-left: 110px;
+  }
+  .example__intro-text {
+    margin-left: 65px;
+  }
+  .example__comparison {
+    width: 868px;
+  }
+  .contacts {
+    justify-content: flex-start;
+  }
+  .contacts__title,
+  .contacts__text {
+    z-index: 1;
+    margin: 0;
+    box-sizing: content-box;
+    background-color: #fff;
+    padding-top: 67px;
+    padding-bottom: 60px;
+  }
+  .contacts__title {
+    padding-left: 76px;
+    padding-right: 95px;
+  }
+  .contacts__text {
+    padding-right: 76px;
+  }
+  .contacts__map {
+    max-width: 1440px;
+    margin-left: -110px;
+    margin-top: -248px;
+  }
+  .page-footer {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .page-footer__logo:hover {
+    opacity: 0.8;
+  }
+  .page-footer__logo:active {
+    opacity: 0.6;
+  }
+  .page-footer__academy-link:hover {
+    opacity: 0.5;
+  }
+  .page-footer__academy-link:active {
+    opacity: 0.3;
+  }
+  .social__link:hover {
+    opacity: 0.4;
+  }
+  .social__link:active {
+    opacity: 0.3;
+  }
+}
+.inner-page .main-nav {
+  border-bottom: 1px solid #e6e6e6;
+}
+.active-list {
+  border-bottom: 1px solid #e6e6e6;
+}
+.active-list__item {
+  padding: 0;
+}
+.active-list__item a {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: none;
+  text-align: left;
+  padding: 19px 0 30px 22px;
 }
