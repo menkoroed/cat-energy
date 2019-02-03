@@ -1307,3 +1307,153 @@ a {
 .inner-page .contacts .contacts__map {
   margin: 0;
 }
+@media (min-width: 768px) {
+  .catalog__title,
+  .inner-page .main-nav {
+    border: 0;
+  }
+  .catalog__title {
+    font-size: 60px;
+    padding-top: 66px;
+  }
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 140px 60px;
+    margin-top: 136px;
+  }
+  .catalog__item {
+    padding: 40px 37px;
+    background-color: #f2f2f2;
+    grid-template-columns: 249px;
+    grid-template-rows: 98px 64px 144px 40px;
+    margin: 0;
+    border-bottom: 0;
+    justify-items: center;
+  }
+  .catalog__item-name {
+    width: 120px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .catalog__item img {
+    margin-top: -100px;
+  }
+  .catalog__item:nth-child(2n) img {
+    margin-top: -120px;
+  }
+  .catalog__item--more {
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+  }
+  .catalog__description,
+  .catalog__term {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .btn {
+    justify-self: stretch;
+  }
+  .catalog__link {
+    grid-area: 4/1/-1/-1;
+  }
+  .catalog__definition {
+    grid-area: auto;
+    justify-self: stretch;
+  }
+  .catalog__more-text {
+    font-size: 20px;
+    grid-row: 1 / 3;
+    width: 130px;
+    align-self: end;
+    padding-top: 130px;
+  }
+  .catalog__more-text::before,
+  .catalog__more-text::after {
+    width: 60px;
+  }
+  .catalog__text {
+    font-size: 16px;
+    line-height: 1;
+    grid-row: 3;
+    margin-top: 30px;
+  }
+  .catalog__show {
+    grid-row: 4;
+  }
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 73px -30px;
+    padding-left: 67px;
+  }
+  .extra__title::before {
+    content: '';
+    height: 3px;
+    background-color: #68b738;
+    margin-left: -68px;
+    width: 30px;
+    margin-right: 40px;
+  }
+  .extra__title::after {
+    margin-left: 38px;
+  }
+  .extra__list {
+    border: 0;
+  }
+  .extra__item {
+    border: 1px solid #cdcdcd;
+    border-bottom: 0;
+    padding: 27px 36px;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 27px;
+  }
+  .extra__item:nth-last-child(2) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .extra__item--gift {
+    background-image: url(../img/gift-photo-tablet.jpg);
+    height: 200px;
+    margin: 73px 0;
+  }
+  .extra__name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .extra__definition {
+    align-content: center;
+  }
+  .extra__description,
+  .extra__term {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .extra__link {
+    grid-area: 2 / 1 / 3 / -1;
+  }
+  .extra__gift {
+    text-align: left;
+    grid-column-start: 2;
+    margin-left: 70px;
+  }
+  .extra__gift::before {
+    top: 65px;
+    left: 91px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .inner-page .contacts {
+    justify-content: space-between;
+    margin: 0 -30px;
+    padding: 0 72px;
+  }
+  .inner-page .contacts .contacts__map {
+    margin-left: -72px;
+  }
+  .inner-page .contacts__text,
+  .inner-page .contacts__title {
+    padding: 65px 0;
+    margin: 0;
+  }
+}
