@@ -1477,7 +1477,7 @@ a {
 
 .extra__name {
   line-height: 16px;
-  color: #111;
+  color: #222;
   font-weight: 400;
   margin-top: 14px;
 }
@@ -1548,7 +1548,7 @@ a {
   .catalog__item{
     padding: 40px 37px;
     background-color: #f2f2f2;
-    grid-template-columns: 249px;
+    grid-template-columns: 1fr;
     grid-template-rows: 98px 64px 144px 40px;
     margin: 0;
     border-bottom: 0;
@@ -1700,6 +1700,99 @@ a {
     & .contacts__title{
       padding: 65px 0;
       margin: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-page{
+    & .site-list__item a{
+      color: #111;
+    }
+
+    & .site-list__item--active{
+      border-color: #68b738;
+    }
+
+    & .page-header{
+      min-height: auto;
+    }
+
+    & .contacts{
+      margin: 0 -110px;
+      background-color: transparent;
+      justify-content: flex-start;
+    }
+
+    & .contacts .contacts__map{
+      margin-left: -110px;
+      margin-top: -248px;
+    }
+
+    & .contacts__title {
+      padding-left: 76px;
+      padding-right: 95px;
+    }
+
+    & .contacts__text {
+      padding-right: 76px;
+    }
+  }
+
+  .catalog__list{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 142px 80px;
+  }
+
+  .extra__title{
+    margin: 80px -110px;
+    &::before{
+      width: 110px;
+    }
+  }
+
+  .extra__list{
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-template-rows: repeat(4, 71px);
+    grid-column-gap: 80px;
+    margin-bottom: 85px;
+  }
+
+  .extra__item{
+    border: 0;
+    border-top: 1px solid #cdcdcd;
+    grid-template-columns: 1fr 1fr 245px;
+    padding: 15px 0;
+    justify-items: flex-start;
+    grid-column-start: 1;
+    &--gift{
+      background-image: url(../img/gift-photo-mobile.jpg);
+      height: 289px;
+      margin: 0;
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .extra__link {
+    grid-area: ~'1/3/1/-1';
+  }
+
+  .extra__definition{
+    width: 285px;
+  }
+
+  .extra__gift{
+    text-align: center;
+    grid-column-start: 1;
+    margin: 0;
+    justify-self: center;
+    margin-bottom: 13px;
+    &::before{
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
