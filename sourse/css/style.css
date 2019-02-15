@@ -103,8 +103,8 @@ a {
 }
 .page-header__logo-image {
   vertical-align: middle;
-  height: 61px;
   width: 101px;
+  margin: 23px 0;
 }
 .main-nav__toggle {
   position: absolute;
