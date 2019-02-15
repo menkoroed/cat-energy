@@ -30,7 +30,8 @@
 			<h2 class="catalog__title">Подбор программы</h2>
 			<p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 			<form class="form__format" action="#" method="POST">
-				<fieldset>
+				<div class="form__container">
+					<fieldset>
 					<ul class="form__list">
 						<li class="form__item">
 							<label for="form__name" class="form__name">Имя:<sup>*</sup></label>
@@ -45,8 +46,8 @@
 							<input type="number" name="age" id="form__age" class="form__field" placeholder="7">
 						</li>
 					</ul>
-				</fieldset>
-				<fieldset>
+					</fieldset>
+					<fieldset>
 					<ul class="form__list form__list--radio">
 						<li class="form__item">
 							<input type="radio" name="weight" id="losing-weight" class="example__divisor-js form__field form__field--radio" checked>
@@ -61,19 +62,20 @@
 							<label for="form__advice" class="form__name form__name--radio">Не знаю (Нужен ваш совет)</label>
 						</li>
 					</ul>
-				</fieldset>
+					</fieldset>
+				</div>
 				<fieldset>
-					<legend class="form__legend form__legend--first">Контактные данные (владельца кота)</legend>
-					<ul class="form__list">
-						<li class="form__item">
-							<label for="form__email" class="form__name">E-mail:<sup>*</sup></label>
-							<input type="email" name="email" id="form__email" class="form__field" placeholder="kuklachev@gmail.com">
-						</li>
-						<li class="form__item">
-							<label for="form__phone" class="form__name">Телефон:<sup>*</sup></label>
-							<input type="tel" name="phone" id="form__phone" class="form__field" placeholder="8 (960) 900-60-90">
-						</li>
-					</ul>
+				<legend class="form__legend form__legend--first">Контактные данные (владельца кота)</legend>
+				<ul class="form__list form__list--contact">
+					<li class="form__item">
+						<label for="form__email" class="form__name">E-mail:<sup>*</sup></label>
+						<input type="email" name="email" id="form__email" class="form__field form__field--email" placeholder="kuklachev@gmail.com">
+					</li>
+					<li class="form__item">
+						<label for="form__phone" class="form__name">Телефон:<sup>*</sup></label>
+						<input type="tel" name="phone" id="form__phone" class="form__field form__field--phone" placeholder="8 (960) 900-60-90">
+					</li>
+				</ul>
 				</fieldset>
 				<fieldset>
 					<legend class="form__legend form__legend--second">Комментарий</legend>
@@ -85,7 +87,7 @@
 				</fieldset>
 				<fieldset>
 					<legend class="form__legend form__legend--third">Дополнительно</legend>
-					<ul class="form__list">
+					<ul class="form__list form__list--checkbox">
 						<li class="form__item">
 							<input type="checkbox" name="sweetener" id="form__sweetener" class="example__divisor-js form__field form__field--checkbox" checked>
 							<label for="form__sweetener" class="form__name form__name--checkbox">Сахарозаменитель</label>
@@ -100,15 +102,17 @@
 						</li>
 						<li class="form__item">
 							<input type="checkbox" name="vitamins" id="form__vitamins" class="example__divisor-js form__field form__field--checkbox">
-							<label for="form__vitamins" class="form__nam form__name--checkbox">Витамины</label>
+							<label for="form__vitamins" class="form__name form__name--checkbox form__name--vitamins">Витамины</label>
 						</li>
 						<li class="form__item">
 							<input type="submit" class="form__field form__field--submit" value="Отправить заявку">
 						</li>
+						<li class="form__item form__item--small">
+							<small class="form__small"><sup class="form__star">*</sup> — Обязательные поля</small>		
+						</li>
 					</ul>
 				</fieldset>
 			</form>
-			<small class="form__small"><sup class="form__star">*</sup> — Обязательные поля</small>
 		</section>
 		<section class="contacts">
 			<h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
