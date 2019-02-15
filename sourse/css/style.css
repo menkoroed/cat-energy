@@ -542,6 +542,7 @@ a {
   .page-header__logo-image {
     width: 173px;
     height: 58px;
+    margin: 0;
   }
   .main-nav__toggle {
     display: none;
